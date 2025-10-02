@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reloj • Fecha • Ubicación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Tu hora, fecha y ubicación</h1>
+      <p class="sub">Actualizado en tiempo real, formato es-MX</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Hora</h2>
+        <div id="time" class="value">--:--:--</div>
+      </article>
+
+      <article class="card">
+        <h2>Fecha</h2>
+        <div id="date" class="value">-- -- ----</div>
+      </article>
+
+      <article class="card">
+        <h2>Ubicación</h2>
+        <div class="loc">
+          <div><span class="label">Zona horaria:</span> <span id="tz">cargando…</span></div>
+          <div><span class="label">Coordenadas:</span> <span id="coords">pídeme permiso 😊</span></div>
+          <button id="locBtn" class="btn" type="button">Detectar ubicación</button>
+          <p class="hint">*No usamos servicios externos; solo el GPS del navegador.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      Hecho con ❤️ en HTML + CSS + JS
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
